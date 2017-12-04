@@ -1,135 +1,152 @@
 
 body {
   
-  background-color: whitesmoke;
-  text-align: center
- 
+    background-color: whitesmoke;
+    font-family: 'Bitter', serif;
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /*-------Container-------*/
 /*--PC--*/
 .container {
-    margin-right: 15%;
-    margin-left: 15%;
-    padding-left: 0px;
-    padding-right: 0px; 
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 /*----Option Bar-----*/
 
-.optionBar {
-    
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
+header {
+    min-height: 70px;
     background-color: #333333;
 }
 
+header #logo {
+    float: left;
+}
+header #logo img {
+    max-height: 70px;
+    
+}
 
-.optionBar ul {
+header nav {
+    float: right;  
+}
+
+nav {
+    margin-top: 10px;
+}
+nav ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     padding: 0;
 }
 
-.optionBar li {
+nav li {
     float:left;
 }
 
-.optionBar li a {
-    display: block;
+nav li a {
+    display:block;
     color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
 }
 
-/*-------Ttitle -------*/
+header a:hover{
+    font-weight: bold;
+}
 
-h1 {
+/*-------Ttitle -------*/
+#showcase {
     
-    background-image:  url(/resources/Martinak0.jpg);
-    background-repeat: no-repeat;
-    background-size: 700px;
+    background: url(/resources/showcase.jpg) no-repeat;
+    background-size: cover;
     background-position: center;
+    min-height: 300px;
     
     color: aliceblue;
-    font-family: 'Poiret One', cursive;
-    font-size: 40px;
-    
-    height: 300px;
-    line-height: 250px;
-    text-align: : center;
-    margin-top: 70px;
-
+    text-align: center;
+}
+#showcase h1 {
+    font-size: 30px;
+    margin-top: 100px;
     
 }
-
-/*------ Text -----*/
-p {
-    
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Poiret One', cursive;
-    color: black;
-}
-
 
 /*----Contacte -----*/
 
-.contact {
-    display:inline-block;
+#contact {
+    background-color: #333333;
     text-align: center;
+    padding: 5px;
 }
 
-.contact img {
-    
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 100px;
-    
-}
-
-.contact ul {
+#contact ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 0;
+    display: inline-block;
 }
 
-.contact li {
+#contact li{
     float:left;
+}
+
+#contact li a {
+    text-align: center;
+    padding: 6px 15px 6px 15px;
+    display: inline-block;
+}
+#contact img {
+    width: 60px;
+    margin: 0;
+    padding: 0;
     
 }
 
-.contact li a {
-    display: block;
-    /*color: white;*/
+/*---Intro ---*/
+#intro {
+    background-color: whitesmoke;
     text-align: center;
-    padding: 16px;
-    text-decoration: none;
+    padding: 2% 20%;
 }
+
+#intro p {
+    color: black; 
+}
+
+/*---Footer ---*/
+
+footer {
+    background-color: #333333;
+    text-align: right;
+}
+
+footer p {
+    line-height: 1;
+    font-size: 12px;
+    color: white;
+    
+}
+
+
 
 /*---Cell Phone ---*/
 /*- Para evitar la deformacion usaremos parametros diferentes en funcion del dispositivo que use la web*/
 @media (max-width:426px) {
     
     .container {
-        margin-right: 5%;
-        margin-left: 5%;
+        width: 95%;
     }
-    .optionBar {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    p {
-    
-        margin-left: 10px;
-        margin-right: 10px;
+
+    #intro {
+        padding: 2%; 
     }
 }
 
