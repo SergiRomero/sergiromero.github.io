@@ -1,0 +1,37 @@
+section {
+    text-align: center;
+    padding 5px;
+}
+
+section ul {
+    
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+section li {
+    float: left;
+    padding: 5px 30px
+}
+
+section img {
+    
+    width: 200px;
+    
+    
+}
+
+.contact {
+    background-color: whitesmoke;
+}
+
+@media(max-width:426px) {
+    
+    section li {
+        float:none;
+    }  
+}

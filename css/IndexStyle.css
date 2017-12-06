@@ -1,0 +1,45 @@
+/*-------Ttitle -------*/
+#showcase {
+    
+    background: url(/resources/showcase.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    
+    color: aliceblue;
+    text-align: center;
+}
+#showcase h1 {
+    font-size: 30px;
+    margin-top: 100px;
+    
+}
+
+
+
+/*---Intro ---*/
+#intro {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2% 20%;
+}
+
+#intro p {
+    color: black; 
+}
+
+/*--Responsive WP--*/
+
+@media (max-width:426px) {
+
+    #intro {
+        padding: 2%; 
+    }
+}
+
+@media (max-width:376px) {
+    #showcase h1 {
+        margin-top: 120px;
+    }
+
+}
