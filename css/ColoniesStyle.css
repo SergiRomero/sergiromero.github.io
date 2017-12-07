@@ -16,7 +16,7 @@
 
 /*---Intro ---*/
 #intro {
-    background-color: greenyellow;
+    background-color: whitesmoke;
     text-align: center;
     padding: 2% 20%;
 }
@@ -46,12 +46,12 @@ section li {
 }
 
 #buttons {
-    background: darkgreen;
+    background-color: darkgreen;
 }
 
 button {
     
-    background: darkgreen;
+    background-color: darkgreen;
     border: 0;
     padding: 3px 10px;
     color:  white;
@@ -67,7 +67,7 @@ button:hover {
 
 section #grups{
     
-    background: green;
+    background-color: whitesmoke;
     
 }
 
