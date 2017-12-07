@@ -1,0 +1,66 @@
+#showcase {
+    
+    background: url(/resources/showcase.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    
+    color: aliceblue;
+    text-align: center;
+}
+#showcase h1 {
+    font-size: 30px;
+    margin-top: 100px;
+    
+}
+
+/*---Intro ---*/
+#intro {
+    background-color: greenyellow;
+    text-align: center;
+    padding: 2% 20%;
+}
+
+#intro p {
+    color: black; 
+}
+
+section {
+    text-align: center;
+    padding 5px;
+}
+
+section ul {
+    
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+section li {
+    float: left;
+    padding: 5px 20px
+}
+
+#buttons {
+    background: darkgreen;
+}
+
+button {
+    
+    background: darkgreen;
+    border: 0;
+    padding: 3px 10px;
+    color:  white;
+    
+}
+
+button:hover {
+    
+    /*background: green;*/
+    font-weight: bold;
+    
+}

@@ -20,7 +20,7 @@ body {
 
 header {
     min-height: 70px;
-    background-color: #333333;
+    background-color: darkgreen;
 }
 
 header #logo {
@@ -65,7 +65,7 @@ header a:hover{
 /*---Footer ---*/
 
 footer {
-    background-color: #333333;
+    background-color: darkgreen;
     text-align: right;
 }
 
@@ -79,7 +79,7 @@ footer p {
 /*----Contacte -----*/
 
 .contact {
-    background-color:#333333;
+    background-color:darkgreen;
     text-align: center;
     padding: 5px;
 }
