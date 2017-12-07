@@ -1,6 +1,6 @@
 #showcase {
     
-    background: url(/resources/showcase.jpg) no-repeat;
+    background: url(/resources/esplai.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -63,4 +63,14 @@ button:hover {
     /*background: green;*/
     font-weight: bold;
     
+}
+
+section #grups{
+    
+    background: green;
+    
+}
+
+.grup {
+    display:none;
 }
