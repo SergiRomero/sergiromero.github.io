@@ -28,6 +28,7 @@ function showPetits() {
         grup[6].style.display = 'none';
         
         obertPetits = true;
+        obertMitjans = obertGrans = obertK0 = obertK1 = obertK2 = obertRuta = false;
         
     }
 };
@@ -51,6 +52,7 @@ function showMitjans() {
         grup[6].style.display = 'none';
         
         obertMitjans = true;
+        obertPetits = obertGrans = obertK0 = obertK1 = obertK2 = obertRuta = false;
         
     }
 };
@@ -74,6 +76,7 @@ function showGrans() {
         grup[6].style.display = 'none';
         
         obertGrans = true;
+        obertPetits = obertMitjans = obertK0 = obertK1 = obertK2 = obertRuta = false;
         
     }
 };
@@ -97,6 +100,7 @@ function showK0() {
         grup[6].style.display = 'none';
         
         obertK0 = true;
+        obertPetits = obertMitjans = obertGrans = obertK1 = obertK2 = obertRuta = false;
         
     }
 };
@@ -120,6 +124,7 @@ function showK1() {
         grup[6].style.display = 'none';
         
         obertK1 = true;
+        obertPetits = obertMitjans = obertGrans = obertK0 = obertK2 = obertRuta = false;
         
     }
 };
@@ -143,6 +148,7 @@ function showK2() {
         grup[6].style.display = 'none';
         
         obertK2 = true;
+        obertPetits = obertMitjans = obertGrans = obertK0 = obertK1 = obertRuta = false;
         
     }
 };
@@ -166,6 +172,7 @@ function showRuta() {
         grup[6].style.display = 'block';
         
         obertRuta = true;
+        obertPetits = obertMitjans = obertGrans = obertK0 = obertK1 = obertK2 = false;
         
     }
 };

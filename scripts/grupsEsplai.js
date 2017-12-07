@@ -26,6 +26,7 @@ function showMinis() {
         grup[5].style.display = 'none';
         
         obertMinis = true;
+        obertPetits = obertMitjans = obertGrans = obertJoves1 = obertJoves2 = false;
         
     }
 };
@@ -48,6 +49,7 @@ function showPetits() {
         grup[5].style.display = 'none';
         
         obertPetits = true;
+        obertMinis = obertMitjans = obertGrans = obertJoves1 = obertJoves2 = false;
         
     }
 };
@@ -70,6 +72,7 @@ function showMitjans() {
         grup[5].style.display = 'none';
         
         obertMitjans = true;
+        obertMinis = obertPetits = obertGrans = obertJoves1 = obertJoves2 = false;
         
     }
 };
@@ -92,6 +95,7 @@ function showGrans() {
         grup[5].style.display = 'none';
         
         obertGrans = true;
+        obertMinis = obertPetits = obertMitjans = obertJoves1 = obertJoves2 = false;
         
     }
 };
@@ -114,6 +118,7 @@ function showJoves1() {
         grup[5].style.display = 'none';
         
         obertJoves1 = true;
+        obertMinis = obertPetits = obertMitjans = obertGrans = obertJoves2 = false;
         
     }
 };
@@ -136,6 +141,7 @@ function showJoves2() {
         grup[5].style.display = 'block';
         
         obertJoves2 = true;
+        obertMinis = obertPetits = obertMitjans = obertGrans = obertJoves1 = false;
         
     }
 };
