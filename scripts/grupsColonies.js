@@ -1,29 +1,42 @@
 "use strict";
-function showMinis() {
-    
-    var grup = document.getElementsByClassName('grup');
-    
-    if (grup[0].style.display != 'none') {
-        
-        hideAll();
-        
-    } else {
-        
-        grup[0].style.display = 'inline-block';
-        grup[1].style.display = 'none';
-        grup[2].style.display = 'none';
-        grup[3].style.display = 'none';
-        grup[4].style.display = 'none';
-        grup[5].style.display = 'none';
-        
-    }
-};
+
+var obertPetits = false;
+var obertMitjans = false;
+var obertGrans =  false;
+var obertK0 = false;
+var obertK1 = false;
+var obertK2 = false;
+var obertRuta = false;
+
 
 function showPetits() {
     
     var grup = document.getElementsByClassName('grup');
     
-    if (grup[1].style.display != 'none') {
+    if (obertPetits) {
+        
+        hideAll();
+        
+    } else {
+        
+        grup[0].style.display = 'block';
+        grup[1].style.display = 'none';
+        grup[2].style.display = 'none';
+        grup[3].style.display = 'none';
+        grup[4].style.display = 'none';
+        grup[5].style.display = 'none';
+        grup[6].style.display = 'none';
+        
+        obertPetits = true;
+        
+    }
+};
+
+function showMitjans() {
+    
+    var grup = document.getElementsByClassName('grup');
+    
+    if (obertMitjans) {
         
         hideAll();
         
@@ -35,15 +48,18 @@ function showPetits() {
         grup[3].style.display = 'none';
         grup[4].style.display = 'none';
         grup[5].style.display = 'none';
+        grup[6].style.display = 'none';
+        
+        obertMitjans = true;
         
     }
 };
 
-function showMitjans() {
+function showGrans() {
     
     var grup = document.getElementsByClassName('grup');
     
-    if (grup[2].style.display != 'none') {
+    if (obertGrans) {
         
         hideAll();
         
@@ -55,15 +71,18 @@ function showMitjans() {
         grup[3].style.display = 'none';
         grup[4].style.display = 'none';
         grup[5].style.display = 'none';
+        grup[6].style.display = 'none';
+        
+        obertGrans = true;
         
     }
 };
 
-function showGrans() {
+function showK0() {
     
     var grup = document.getElementsByClassName('grup');
     
-    if (grup[3].style.display != 'none') {
+    if (obertK0) {
         
         hideAll();
         
@@ -75,15 +94,18 @@ function showGrans() {
         grup[3].style.display = 'block';
         grup[4].style.display = 'none';
         grup[5].style.display = 'none';
+        grup[6].style.display = 'none';
+        
+        obertK0 = true;
         
     }
 };
 
-function showJoves1() {
+function showK1() {
     
     var grup = document.getElementsByClassName('grup');
     
-    if (grup[4].style.display != 'none') {
+    if (obertK1) {
         
         hideAll();
         
@@ -95,15 +117,18 @@ function showJoves1() {
         grup[3].style.display = 'none';
         grup[4].style.display = 'block';
         grup[5].style.display = 'none';
+        grup[6].style.display = 'none';
+        
+        obertK1 = true;
         
     }
 };
 
-function showJoves2() {
+function showK2() {
     
     var grup = document.getElementsByClassName('grup');
     
-    if (grup[5].style.display != 'none') {
+    if (obertK2) {
         
         hideAll();
         
@@ -115,6 +140,32 @@ function showJoves2() {
         grup[3].style.display = 'none';
         grup[4].style.display = 'none';
         grup[5].style.display = 'block';
+        grup[6].style.display = 'none';
+        
+        obertK2 = true;
+        
+    }
+};
+
+function showRuta() {
+    
+    var grup = document.getElementsByClassName('grup');
+    
+    if (obertRuta) {
+        
+        hideAll();
+        
+    } else {
+        
+        grup[0].style.display = 'none';
+        grup[1].style.display = 'none';
+        grup[2].style.display = 'none';
+        grup[3].style.display = 'none';
+        grup[4].style.display = 'none';
+        grup[5].style.display = 'none';
+        grup[6].style.display = 'block';
+        
+        obertRuta = true;
         
     }
 };
@@ -126,4 +177,15 @@ function hideAll() {
     document.getElementsByClassName('grup')[3].style.display = 'none';
     document.getElementsByClassName('grup')[4].style.display = 'none';
     document.getElementsByClassName('grup')[5].style.display = 'none';
+    document.getElementsByClassName('grup')[6].style.display = 'none';
+    
+    obertPetits = false;
+    obertMitjans = false;
+    obertGrans = false;
+    obertK0 = false;
+    obertK1 = false;
+    obertK2 = false;
+    obertRuta = false;
+    
+    
 };
