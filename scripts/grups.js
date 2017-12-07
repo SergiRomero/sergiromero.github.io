@@ -9,7 +9,7 @@ function showMinis() {
         
     } else {
         
-        grup[0].style.display = 'block';
+        grup[0].style.display = 'inline-block';
         grup[1].style.display = 'none';
         grup[2].style.display = 'none';
         grup[3].style.display = 'none';
