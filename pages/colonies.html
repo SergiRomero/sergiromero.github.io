@@ -16,9 +16,9 @@
         
     </head>
     
-    <script src="/scripts/grupsColonies.js"></script>
+    <script src="/scripts/grups.js"></script>
     
-    <body>
+    <body onLoad="showSelected(0)"> <!--Petits Obert default-->
         <header>
             <div class="container">
                 <div id="logo">
@@ -55,14 +55,20 @@
         
         <section id="buttons">
             <div class="container">
+                <!-- Relacio Grups-Numero per a cridar la funcio showSelected:
+                            Petits -> 0
+                            Mitjans -> 1
+                            ...
+                            Ruta -> 6
+                -->
                 <ul>
-                    <li><button type="botton" onclick="showPetits()">Petits</button></li>
-                    <li><button type="botton" onclick="showMitjans()">Mitjans</button></li>
-                    <li><button type="botton" onclick="showGrans()">Grans</button></li>
-                    <li><button type="botton" onclick="showK0()">K0</button></li>
-                    <li><button type="botton" onclick="showK1()">K1</button></li>
-                    <li><button type="botton" onclick="showK2()">K2</button></li>
-                    <li><button type="botton" onclick="showRuta()">Ruta</button></li>
+                    <li><button type="botton" onclick="showSelected(0)">Petits</button></li>
+                    <li><button type="botton" onclick="showSelected(1)">Mitjans</button></li>
+                    <li><button type="botton" onclick="showSelected(2)">Grans</button></li>
+                    <li><button type="botton" onclick="showSelected(3)">K0</button></li>
+                    <li><button type="botton" onclick="showSelected(4)">K1</button></li>
+                    <li><button type="botton" onclick="showSelected(5)">K2</button></li>
+                    <li><button type="botton" onclick="showSelected(6)">Ruta</button></li>
                     
                     
                 </ul>

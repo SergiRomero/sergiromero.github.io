@@ -74,3 +74,10 @@ section #grups{
 .grup {
     display:none;
 }
+
+@media (max-width:426px) {
+
+    #intro {
+        padding: 2%; 
+    }
+}

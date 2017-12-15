@@ -16,10 +16,10 @@
         
     </head>
     
-    <script src="/scripts/grupsEsplai.js"></script>
+    <script src="/scripts/grups.js"></script>
     
-    <body>
-        <header>
+    <body onLoad="showSelected(0)"> <!--Inicia per defecte la finestra de minis oberta-->
+        <header> 
             <div class="container">
                 <div id="logo">
                     <img src="/resources/Cepitu_logo_blanc.png">
@@ -55,13 +55,19 @@
         
         <section id="buttons">
             <div class="container">
+                <!-- Relacio Grups-Numero per a cridar la funcio showSelected:
+                            Minis -> 0
+                            Petits -> 1
+                            ...
+                            Joves 2 -> 5
+                -->
                 <ul>
-                    <li><button type="botton" onclick="showMinis()">Minis</button></li>
-                    <li><button type="botton" onclick="showPetits()">Petits</button></li>
-                    <li><button type="botton" onclick="showMitjans()">Mitjans</button></li>
-                    <li><button type="botton" onclick="showGrans()">Grans</button></li>
-                    <li><button type="botton" onclick="showJoves1()">Joves1</button></li>
-                    <li><button type="botton" onclick="showJoves2()">Joves2</button></li>
+                    <li><button type="botton" onclick="showSelected(0)">Minis</button></li>
+                    <li><button type="botton" onclick="showSelected(1)">Petits</button></li>
+                    <li><button type="botton" onclick="showSelected(2)">Mitjans</button></li>
+                    <li><button type="botton" onclick="showSelected(3)">Grans</button></li>
+                    <li><button type="botton" onclick="showSelected(4)">Joves1</button></li>
+                    <li><button type="botton" onclick="showSelected(5)">Joves2</button></li>
                     
                     
                 </ul>
