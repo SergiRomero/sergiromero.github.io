@@ -26,12 +26,37 @@ section img {
 }
 
 .contact {
-    background-color: whitesmoke;
+    background-color: darkgreen;
 }
+/*--Mapas--*/
+.maps {
+    text-align: center;
+}
+.maps ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.maps li{
+    float: left;
+    width: 74%;
+    margin: 3% 13%;
+}
+
 
 @media(max-width:426px) {
     
     section li {
         float:none;
-    }  
+    }
+    
+    .maps li {
+        width: 90%;
+    }
+    
 }
