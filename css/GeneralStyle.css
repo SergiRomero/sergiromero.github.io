@@ -113,10 +113,11 @@ footer p {
 /*- Para evitar la deformacion usaremos parametros diferentes en funcion del dispositivo que use la web*/
 @media (max-width:426px) {
     
-    .container {
-        width: 95%;
-    }
+    .container {width: 95%;}
 
+}
+@media (max-width:768px){
+    .container {width: 85%;}
 }
 
 
