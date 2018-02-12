@@ -65,9 +65,40 @@ section #grups{
     display:none;
 }
 
+.grup img {
+    width: 300px;
+    display: inline-block;
+}
+.grup p {
+    display: inline-block;
+    width: 220px;
+}
+
+.activitats {
+    align-items: center;
+}
+
+.activitats li {
+    float:left;
+}
+
+.activitats img {
+    width: 300px;
+    display:inline-block;
+}
+.activitats li p {
+    width: 300px;
+}
+
+@media (max-width:1025px) {
+    .activitats li {float:none; padding:0;}
+}
+
 @media (max-width:426px) {
 
     #intro {
         padding: 2%; 
     }
+    .grup li{padding: 0;float: none;}
+    .activitats li {padding:0; float: none}
 }

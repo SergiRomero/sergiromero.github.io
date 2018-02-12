@@ -1,14 +1,4 @@
 /*-------Ttitle -------*/
-#showcase {
-    
-    background: url(/resources/showcase.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
-    
-    color: aliceblue;
-    text-align: center;
-}
 #showcase h1 {
     font-size: 30px;
     margin-top: 150px;

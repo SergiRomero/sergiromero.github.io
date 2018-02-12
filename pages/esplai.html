@@ -54,13 +54,16 @@
                 </div>
         
                 <nav>
-                    <ul>
-                        <li><a href="/index.html">Inici</a></li>
-                        <li><a href="/pages/notAviable.html">Qui Som?</a></li>
-                        <li><a title="Ja estas en aquesta pagina">Esplai</a></li>
-                        <li><a href="/pages/colonies.html">Colònies</a></li>
-                        <li><a href="/pages/contact.html">Contacte</a></li>
-                    </ul>
+                      <ul>
+                            <li><a href="/">Inici</a></li>
+                            <li><a href="/pages/quiSom.html">Qui Som?</a></li>
+                            <li><a href="/pages/families.html">Famílies</a></li>
+                            <li><a title="Ja estas en aquesta pàgina">Esplai</a></li>
+                            <li><a href="/pages/colonies.html">Colònies</a></li>
+                            <li><a href="/pages/informacio.html">Informació</a></li>
+                            <li><a href="/pages//cancons.html">Cançons</a></li>
+                            <li><a href="/pages/contact.html">Contacte</a></li>
+                      </ul>
                 </nav>
             </div>
         </header>
@@ -73,7 +76,10 @@
         
         <section id="intro">
             <div class="container">
-                <p>Més de 30 anys ens avalen en el món del lleure; el Cepitu neix de la inquietud i la il·lusió de formar i educar els nens i nenes a través de jocs, gimcanes, balls, cançons... Sempre amb un objetiu: aconseguir que tots els nens i nenes aprenguin passant-s'ho bé! Dissabte rere dissabte l'esplai ofereix la possibilitat a tots els nens i nenes que ho vulguin de fer que els caps de setmana no siguin avorrits. Si la tele no t'interesa i t'agrada fer amics i amigues, el Cepitu et permet fer del cap de setmana una aventura, cada dia diferent.</p>
+                <p><b>Que fem?</b></p>
+                <p>Dissabte rere dissabte l'esplai ofereix la possibilitat a tots els nens i nenes que ho vulguin de fer que els caps de setmana no siguin avorrits. Si la tele no t'interesa i t'agrada fer amics i amigues, el Cepitu et permet fer del cap de setmana una aventura, cada dia diferent.</p>
+                <p>Dins del nostre esplai ens dividim en grups en funció de l'edat. Cada grup adapta les seves activitats mantenint un fil conductor comú en tots els grups. Aquest centre d'interès canvia cada trimestre i va relacionat amb un valor.</p>
+                <p>Cada trimestre organitzem una <b>sortida i una trobada amb les families</b> diferent.</p>
                 <p><b>On i quan?</b></p>
                 <p>Cada dissabte de 16:30 a 19:30 a l'escola Bisbat d'Egara</p>
                 <p><b>Quin grup faig?</b></p>
@@ -88,6 +94,7 @@
                             Petits -> 1
                             ...
                             Joves 2 -> 5
+                            Puzle -> 6
                 -->
                 <ul>
                     <li><button type="botton" onclick="showSelected(0)">Minis</button></li>
@@ -95,31 +102,92 @@
                     <li><button type="botton" onclick="showSelected(2)">Mitjans</button></li>
                     <li><button type="botton" onclick="showSelected(3)">Grans</button></li>
                     <li><button type="botton" onclick="showSelected(4)">Joves1</button></li>
-                    <li><button type="botton" onclick="showSelected(5)">Joves2</button></li>   
+                    <li><button type="botton" onclick="showSelected(5)">Joves2</button></li>
+                    <li><button type="botton" onclick="showSelected(6)">Puzle</button></li> 
                 </ul>
             </div>
         </section>
         
         <section id="grups">
             <div class="container">
-                <div class="grup"><h2>Minis </h2><p>De 3 a 5 anys</p></div>
-                <div class="grup"><h2>Petits</h2><p>De 6 a 7 anys</p></div>
-                <div class="grup"><h2>Mitjans</h2><p>De 8 a 9 anys</p></div>
-                <div class="grup"><h1>Grans</h1><p>De 10 a 12 anys</p></div>
-                <div class="grup"><h1>Joves 1</h1><p>De 13 a 14 anys</p></div>
-                <div class="grup"><h1>Joves 2</h1><p>De 15 a 16 anys</p></div>
+                <div class="grup"><h2>Minis </h2>
+                    <ul>
+                        <li><img src="/resources/esplai/minisEsplai2.jpg"></li>
+                        <li><p>De 3 a 5 anys (P3, P4 i P5)</p></li>
+                    </ul>
+                </div>
+                <div class="grup"><h2>Petits</h2>
+                    <ul>
+                        <li><img src="/resources/esplai/petitsEsplai.jpeg"></li>
+                        <li><p>De 6 a 8 anys (primer i segona de primària)</p></li>
+                    </ul>
+                </div>
+                <div class="grup"><h2>Mitjans</h2>
+                    <ul>
+                        <li><img src="/resources/esplai/mitjansEsplai.jpg"></li>
+                        <li><p>De 8 a 10 anys (tercer i quart de primària)</p></li>
+                    </ul>
+                </div>
+                <div class="grup"><h1>Grans</h1>
+                    <ul>
+                        <li><img src="/resources/esplai/gransEsplai.jpg"></li>
+                        <li><p>De 10 a 12 anys (cinquè i sisè de primària)</p></li>
+                    </ul></div>
+                <div class="grup"><h1>Joves 1</h1>
+                    <ul>
+                        <li><img src="/resources/esplai/joves2Esplai.jpg"></li>
+                        <li><p>De 13 a 14 anys (primer de la ESO)</p></li>
+                    </ul>
+                </div>
+                <div class="grup"><h1>Joves 2</h1>
+                    <ul>
+                        <li><img src="/resources/esplai/joves2Esplai.jpg"></li>
+                        <li><p>De 14 a 16 anys (segon, tercer i quart de la ESO)</p></li>
+                    </ul></div>
+                <div class="grup"><h1>Puzle</h1>
+                    <ul>
+                        <li><img src="/resources/esplai/puzleEsplai.jpg"></li>
+                        <li><p>De 17 anys</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="activitats">
+            <div class="container">
+                <div class="separator"></div>
+                <h2>Sortida a la Muntanya</h2>
+                <ul>
+                    <li><p>El primer trimestre passem tot junts un dia a la muntanya en cantacte amb la natura gaudint del lleure en un entorn diferent.</p></li>
+                    <li><img src="/resources/sortidaALaMuntanya.jpg"></li>
+                </ul>
+                <div class="separator"></div>
+                <h2>Minicolònies</h2>
+                <p>Per setmana santa viatgem a la garrotxa per endinsar-nos, durant quatre dies, en una nova aventura. Fem cohesió de grup, gimcames, excursions, jocs de nit i altres activitats per continuar el curs amb les mateixes ganes que a l'inici.</p>
+                <p>Tot això ho viurem a Mas La Coromina, una casa de colònies situada a la Vall de Bianya, envoltada de prats i boscos.</p>
+                <ul>
+                    <li><img src="/resources/minocolonies1.jpg"></li>
+                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.4644287353326!2d2.0139501154025057!3d41.55919209328984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492ddab3cad03%3A0x97373e02efda687d!2sEscola+Bisbat+d&#39;%C3%88gara!5e0!3m2!1ses!2ses!4v1517920111965" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+                    <li><img src="/resources/minicolonies2.jpg"></li>
+                </ul>
+                <div class="separator"></div>
+                <h2>Sortida a la Platja</h2>
+                <ul>
+                    <li><img src="/resources/sortidaPlatja.jpg"></li>
+                    <li><p>A finals del tercer trimestre aprofitem la calor de l'estiu per passar tots junts un cap de setmana a la platja.</p></li>
+                </ul>
             </div>
         </section>
         
         <footer>
             <div class="container">
                 <p>Esplai Cepitu</p>
-                <p>Pl. de la Farinera s/n</p>
-                <p>08221 Terrassa</p>
+                <p>C/ Faraday, 96</p>
+                <p>08224 Terrassa</p>
                 <p>cepituesplai@gmail.com</p>
                 <p>Última Actualització: <script>var f = new Date();document.write (f.getMonth()+1, " - ", f.getFullYear());</script></p>
             </div>
-    </footer>
+        </footer>
     
     
     </body>

@@ -38,17 +38,18 @@ nav {
     margin-top: 10px;
 }
 nav ul {
-    list-style-type: none;
     margin: 0;
     overflow: hidden;
     padding: 0;
+    float: left;
 }
 
-nav li {
+nav ul li {
     float:left;
+    list-style: none;
 }
 
-nav li a {
+nav ul li a {
     display:block;
     color: white;
     text-align: center;
@@ -59,6 +60,7 @@ nav li a {
 header a:hover{
     font-weight: bold;
 }
+
 
 
 /*---Footer ---*/
@@ -107,17 +109,72 @@ footer p {
     
 }
 
+.separator {
+    height: 4px;
+    background: radial-gradient(circle, darkgreen, rgba(255,0,0,0));
+    margin: 5px;
+}
 
+
+.activitats {
+    align-items: center;
+}
+
+.activitats li {
+    float:left;
+}
+
+.activitats img {
+    width: 300px;
+    display:inline-block;
+}
+.activitats li p {
+    width: 300px;
+}
+/*-------------------------------------------*/
+#intro {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2% 20%;
+}
+
+#intro p {
+    color: black; 
+}
+
+section {
+    text-align: center;
+    padding 5px;
+}
+
+section ul {
+    
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+section li {
+    float: left;
+    padding: 5px 20px
+}
 
 /*---Cell Phone ---*/
 /*- Para evitar la deformacion usaremos parametros diferentes en funcion del dispositivo que use la web*/
 @media (max-width:426px) {
     
     .container {width: 95%;}
+    .activitats li {padding:0; float: none}
 
 }
 @media (max-width:768px){
     .container {width: 85%;}
+}
+@media (max-width:1025px) {
+    .activitats li {float:none; padding:0;}
 }
 
 
