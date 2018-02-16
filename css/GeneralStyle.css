@@ -168,6 +168,7 @@ section li {
     
     .container {width: 95%;}
     .activitats li {padding:0; float: none}
+    #intro {padding:2%;}
 
 }
 @media (max-width:768px){

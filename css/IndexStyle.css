@@ -23,13 +23,6 @@
 
 /*--Responsive WP--*/
 
-@media (max-width:426px) {
-
-    #intro {
-        padding: 2%; 
-    }
-}
-
 @media (max-width:376px) {
     #showcase h1 {
         margin-top: 120px;
