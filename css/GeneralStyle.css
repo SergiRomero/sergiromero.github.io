@@ -178,6 +178,10 @@ section li {
     .activitats li {float:none; padding:0;}
 }
 
+/*--Practicament tots els movils--*/
+@media (max-width:540px){
+    .contact li {padding: 0px 1px;}
+}
 
 
 

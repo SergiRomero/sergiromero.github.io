@@ -1,4 +1,4 @@
 # sergiromero.github.io
 Cepitu Web Page
 
-Pagina en desarrollo
+Pàgina oficial del centre d'esplai Tum Tum
