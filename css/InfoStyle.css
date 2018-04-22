@@ -5,6 +5,9 @@ h3 {text-align: center; margin-top: 0px;}
     margin-bottom: 20px;
     
 }
+.grid img {
+    width: 170px;
+}
 
 @media (max-width:900px){
     .grid {grid-template-columns: 1fr 1fr 1fr;}
