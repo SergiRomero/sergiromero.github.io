@@ -171,6 +171,10 @@ section li {
     padding: 5px 20px
 }
 
+.formulari {
+    width: 100%;
+}
+
 /*---Cell Phone ---*/
 /*- Para evitar la deformacion usaremos parametros diferentes en funcion del dispositivo que use la web*/
 @media (max-width:426px) {
