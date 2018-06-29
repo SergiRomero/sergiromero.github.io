@@ -1,0 +1,30 @@
+.showcase-logo {
+    font-family: 'Ubuntu', sans-serif;
+    width: 50%;
+    text-align: center;
+    height: 350px;
+    margin: 20px auto;
+    background: url(/resources/logoOficial.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 150px;
+}
+
+@media (max-width:1200px){
+    .showcase-logo{height: 325px; width: 60%;padding-top: 125px}
+}
+
+@media (max-width:900px){
+    .showcase-logo {width: 80%;height: 280px; padding-top: 120px}
+}
+
+@media (max-width:600px){
+    .showcase-logo{width: 80%;
+                    height:320px;}
+}
+
+@media (max-width:399px){
+    .showcase-logo {width: 80%;
+                    height: 245px; padding-top: 5px}
+}
