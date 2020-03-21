@@ -1,0 +1,78 @@
+.song-buttons-container {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;   
+}
+.song-buttons-container img {
+    width: 170px;
+}
+
+.song-buttons-container
+{
+    text-align: center;
+}
+
+.song-button
+{
+    width: 95%;
+    border-radius: 7px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.song-button span
+{
+    line-height: 50px !important;
+}
+
+.song-button:hover
+{
+    background-color: orange!important;
+    color: black !important;
+    border: solid 1px black !important;
+}
+
+#song-display-container
+{
+    display:grid;
+    text-align: center;
+    margin: 30px auto 100px auto;
+    width: 50%;
+}
+
+#song-display
+{
+    display: inline-block;
+    background-color: rgb(246, 205, 139);
+    border: solid 5px black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0px 30px;
+}
+
+
+
+#song-display-rythm
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+@media (max-width:900px){
+    .song-buttons-container {grid-template-columns: 1fr 1fr 1fr;}
+    #song-display-container { width: 70%;}
+}
+
+@media (max-width:600px){
+    .song-buttons-container {grid-template-columns: 1fr 1fr;}
+    #song-display-container { width: 90%;}
+}
+
+@media (max-width:399px){
+    .song-buttons-container {grid-template-columns: 1fr 1fr;}
+    #song-display-container { width: 95%;}
+}

@@ -7,6 +7,7 @@
         
         <!--Style-->
         <link rel="stylesheet" href="/css/GeneralStyle.css">
+        <link rel="stylesheet" href="/css/CanconsStyle.css">
     
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
@@ -27,10 +28,12 @@
 
             gtag('config', 'UA-111542044-1');
         </script>
-      
     </head>
     
-    <body>
+    <script src="/scripts/scrollService.js"></script>
+    <script src="/scripts/songDisplay.js"></script>
+    
+    <body onLoad="writeSong('canco2017')">
         <header> 
             <div class="container">
                 <div id="logo">
@@ -54,19 +57,33 @@
         
         <section id="intro">
             <div class="container">
-                <!-- Article introductori-->
-                <h1>Cançons</h1>
-                <p>Aquest contingut encara no esta disponible.</p>
-                <img src="/resources/working.png">
+                Les teves cançons preferides de colònies ja disponibles online, selecciona la teva preferida:
             </div>
         </section>
         
-        <section class="activitats">
-            <div class="container">
-                <!-- Activitats --->
-            </div>
-        </section>
-        
+        <div class="container">
+            <section class="song-buttons-container">
+                <div class="song-button" id="cancoEsplai2016" onClick="writeSong('cancoEsplai2016'), autoScrollById('song-display')"><span>ESPLAI 2016</span></div>
+                <div class="song-button" id="cancoEsplai2012" onClick="writeSong('cancoEsplai2012'), autoScrollById('song-display')"><span>ESPLAI 2012</span></div>
+                <div class="song-button" id="canco2019" onClick="writeSong('canco2019'), autoScrollById('song-display')"><span>COLÒNIES 2019</span></div>
+                <div class="song-button" id="canco2018" onClick="writeSong('canco2018'), autoScrollById('song-display')"><span>COLÒNIES 2018</span></div>
+                <div class="song-button" id="canco2017" onClick="writeSong('canco2017'), autoScrollById('song-display')"><span>COLÒNIES 2017</span></div>
+                <div class="song-button" id="canco2016" onClick="writeSong('canco2016'), autoScrollById('song-display')"><span>COLÒNIES 2016</span></div>
+                <div class="song-button" id="canco2015" onClick="writeSong('canco2015'), autoScrollById('song-display')"><span>COLÒNIES 2015</span></div>
+                <div class="song-button" id="canco2014" onClick="writeSong('canco2014'), autoScrollById('song-display')"><span>COLÒNIES 2014</span></div>
+                <div class="song-button" id="canco2013" onClick="writeSong('canco2013'), autoScrollById('song-display')"><span>COLÒNIES 2013</span></div>
+
+            </section>
+        </div>
+        <div class="container">
+            <section id="song-display-container">
+                <div id="song-display">
+                    <h2 id="song-display-title"></h2>
+                    <div id="song-display-lyrics"></div>
+                    <p id="song-display-rythm"></p>
+                </div>
+            </section>
+        </div>
         <footer>
             <div class="container">
                 <p>Centre d'Esplai Tum Tum</p>
