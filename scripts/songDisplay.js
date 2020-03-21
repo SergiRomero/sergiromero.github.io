@@ -1,5 +1,3 @@
-"use strict";
-
 const TITLE = '::TITLE';
 const RYTHM = '::RITME';
 
@@ -32,8 +30,6 @@ function writeRythm(songName)
 {
     document.getElementById('song-display-rythm').innerHTML += songName;
 }
-
-
 
 
 function unselectButtons()
@@ -86,4 +82,5 @@ function writeSong(title)
     }
     unselectButtons();
     selectButton(title);
+
 }

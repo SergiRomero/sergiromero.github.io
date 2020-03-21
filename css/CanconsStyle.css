@@ -6,18 +6,6 @@
     width: 170px;
 }
 
-@media (max-width:900px){
-    .song-buttons-container {grid-template-columns: 1fr 1fr 1fr;}
-}
-
-@media (max-width:600px){
-    .song-buttons-container {grid-template-columns: 1fr 1fr;}
-}
-
-@media (max-width:399px){
-    .song-buttons-container {grid-template-columns: 1fr;}
-}
-
 .song-buttons-container
 {
     text-align: center;
@@ -31,6 +19,8 @@
     margin: auto;
     text-align: center;
     height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .song-button span
@@ -45,29 +35,44 @@
     border: solid 1px black !important;
 }
 
-.song-display-container
+#song-display-container
 {
+    display:grid;
     text-align: center;
-    margin: 30px 0px 100px 0px;
+    margin: 30px auto 100px auto;
+    width: 50%;
 }
 
 #song-display
 {
     display: inline-block;
-    width: 50%;
     background-color: rgb(246, 205, 139);
     border: solid 5px black;
     border-radius: 20px;
-    margin: 20px 0px 50px 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0px 30px;
 }
 
-#song-display-lyrics
-{
 
-}
+
 #song-display-rythm
 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
+}
+@media (max-width:900px){
+    .song-buttons-container {grid-template-columns: 1fr 1fr 1fr;}
+    #song-display-container { width: 70%;}
+}
+
+@media (max-width:600px){
+    .song-buttons-container {grid-template-columns: 1fr 1fr;}
+    #song-display-container { width: 90%;}
+}
+
+@media (max-width:399px){
+    .song-buttons-container {grid-template-columns: 1fr 1fr;}
+    #song-display-container { width: 95%;}
 }

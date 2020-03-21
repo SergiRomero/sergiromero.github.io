@@ -30,6 +30,7 @@
         </script>
     </head>
     
+    <script src="/scripts/scrollService.js"></script>
     <script src="/scripts/songDisplay.js"></script>
     
     <body onLoad="writeSong('canco2017')">
@@ -62,16 +63,22 @@
         
         <div class="container">
             <section class="song-buttons-container">
-                <div class="song-button" id="canco2017" onClick="writeSong('canco2017')"><span>COLÒNIES 2017</span></div>
-                <div class="song-button" id="cancoEsplai" onClick="writeSong('cancoEsplai')"><span>ESPLAI</span></div>
-                <div class="song-button" id="canco2016" onClick="writeSong('canco2016')"><span>COLÒNIES 2016</span></div>
+                <div class="song-button" id="cancoEsplai2016" onClick="writeSong('cancoEsplai2016'), autoScrollById('song-display')"><span>ESPLAI 2016</span></div>
+                <div class="song-button" id="cancoEsplai2012" onClick="writeSong('cancoEsplai2012'), autoScrollById('song-display')"><span>ESPLAI 2012</span></div>
+                <div class="song-button" id="canco2019" onClick="writeSong('canco2019'), autoScrollById('song-display')"><span>COLÒNIES 2019</span></div>
+                <div class="song-button" id="canco2018" onClick="writeSong('canco2018'), autoScrollById('song-display')"><span>COLÒNIES 2018</span></div>
+                <div class="song-button" id="canco2017" onClick="writeSong('canco2017'), autoScrollById('song-display')"><span>COLÒNIES 2017</span></div>
+                <div class="song-button" id="canco2016" onClick="writeSong('canco2016'), autoScrollById('song-display')"><span>COLÒNIES 2016</span></div>
+                <div class="song-button" id="canco2015" onClick="writeSong('canco2015'), autoScrollById('song-display')"><span>COLÒNIES 2015</span></div>
+                <div class="song-button" id="canco2014" onClick="writeSong('canco2014'), autoScrollById('song-display')"><span>COLÒNIES 2014</span></div>
+                <div class="song-button" id="canco2013" onClick="writeSong('canco2013'), autoScrollById('song-display')"><span>COLÒNIES 2013</span></div>
 
             </section>
         </div>
         <div class="container">
             <section id="song-display-container">
                 <div id="song-display">
-                    <h5 id="song-display-title"></h5>
+                    <h2 id="song-display-title"></h2>
                     <div id="song-display-lyrics"></div>
                     <p id="song-display-rythm"></p>
                 </div>
